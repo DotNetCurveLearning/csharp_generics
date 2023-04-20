@@ -1,0 +1,16 @@
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.exe
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.deps.json
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.runtimeconfig.json
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.runtimeconfig.dev.json
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\WiredBrainCoffee.StackApp.pdb
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.csproj.AssemblyReference.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.AssemblyInfoInputs.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.AssemblyInfo.cs
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.csproj.CoreCompileInputs.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\refint\WiredBrainCoffee.StackApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.pdb
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.genruntimeconfig.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\ref\WiredBrainCoffee.StackApp.dll

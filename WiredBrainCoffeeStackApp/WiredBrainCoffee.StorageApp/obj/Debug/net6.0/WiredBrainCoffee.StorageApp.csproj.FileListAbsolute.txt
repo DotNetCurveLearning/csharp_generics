@@ -1,0 +1,15 @@
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\bin\Debug\net6.0\WiredBrainCoffee.StorageApp.exe
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\bin\Debug\net6.0\WiredBrainCoffee.StorageApp.deps.json
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\bin\Debug\net6.0\WiredBrainCoffee.StorageApp.runtimeconfig.json
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\bin\Debug\net6.0\WiredBrainCoffee.StorageApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\bin\Debug\net6.0\WiredBrainCoffee.StorageApp.pdb
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.csproj.AssemblyReference.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.AssemblyInfoInputs.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.AssemblyInfo.cs
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.csproj.CoreCompileInputs.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\refint\WiredBrainCoffee.StorageApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.pdb
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\WiredBrainCoffee.StorageApp.genruntimeconfig.cache
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StorageApp\obj\Debug\net6.0\ref\WiredBrainCoffee.StorageApp.dll
