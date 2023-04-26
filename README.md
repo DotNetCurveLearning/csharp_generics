@@ -87,3 +87,26 @@ public class GenericRepository<TItem,TKey>
     where TItem : class, IEntity
     where TKey : struct
 ```
+
+# Working with generic interfaces
+
+The use of generic interfaces is based on the **Dependency Inversion Control**, that stablish that a component **must depend on 
+abstractions**, and not in implementations.
+
+## Understand covariance
+
+Generic parameters of interfaces are by default, invariant. This means they have to have exactly **the same type as the type that we use on the class that implements the interface**.
+It means that if we have:
+
+```
+IRepository<Organization> repo = new ListRepository<Organization>();
+```
+
+We have on the interface **exactly** the same type argument as on the class. This works as the ListRepository of Organization is an IRepository of Organization. But the generic type of this generic IRepository
+interface is, by default, **invariant**.
+This means, on the interface, we cannot use a **less specific type argument** like, for example, the IEntity type.
+For methods where we pass in an item, it's not okay to pass in an IEntity because the ListRepository needs, actually, an Organization. 
+
+This means, for the methods where we read from the repository, we could have **a less specific type**, and this is what **covariance** is about.
+
+## Understand contravariance

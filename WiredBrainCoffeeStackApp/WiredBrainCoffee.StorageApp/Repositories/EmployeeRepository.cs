@@ -2,7 +2,7 @@
 
 namespace WiredBrainCoffee.StorageApp.Repositories
 {
-    public class EmployeeRepository : GenericRepository<Employee>
+    public class EmployeeRepository : ListRepository<Employee>
     {
         
     }

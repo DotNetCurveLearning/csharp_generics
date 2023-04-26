@@ -14,3 +14,4 @@ C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeSt
 C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.pdb
 C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\WiredBrainCoffee.StackApp.genruntimeconfig.cache
 C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\obj\Debug\net5.0\ref\WiredBrainCoffee.StackApp.dll
+C:\Users\ernestoantonio.rodri\Courses\Csharp10Course\Generics\WiredBrainCoffeeStackApp\WiredBrainCoffee.StackApp\bin\Debug\net5.0\appsettings.json
