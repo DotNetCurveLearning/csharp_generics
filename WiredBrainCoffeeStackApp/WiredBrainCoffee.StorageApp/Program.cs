@@ -9,7 +9,7 @@ AddManagers(employeeRepository);
 //Console.WriteLine($"Employee: {GetEmployeeById(employeeRepository).FirstName}");
 WriteAllToConsole(employeeRepository);
 
-//Console.WriteLine();
+Console.WriteLine();
 
 var organizationRepository = new ListRepository<Organization>();
 AddOrganizations(organizationRepository);
@@ -39,17 +39,7 @@ static void AddOrganizations(IRepository<Organization> repo)
         new Organization { Name = "Globomantics" }
     };
 
-    AddBatch(repo, organizations);
-}
-
-static void AddBatch<T>(IWriteRepository<T> repo, T[] items)
-{
-    foreach (var item in items)
-    {
-        repo.Add(item);
-    }
-    
-    repo.Save();
+    repo.AddBatch(organizations);
 }
 
 static void AddEmployees(IRepository<Employee> repo)
@@ -61,7 +51,7 @@ static void AddEmployees(IRepository<Employee> repo)
         new Employee { FirstName = "Thomas" }
     };
 
-    AddBatch(repo, employees);
+    repo.AddBatch(employees);
 }
 
 void AddManagers(IWriteRepository<Manager> managerRepository)

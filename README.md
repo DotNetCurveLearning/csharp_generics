@@ -194,3 +194,34 @@ static void AddEmployees(IRepository<Employee> repo)
     AddBatch(repo, employees);
 }
 ```
+
+## Build a generic extensnion method
+
+```
+public static class RepositoryExtensions
+{
+    public static void AddBatch<T>(this IWriteRepository<T> repo, T[] items)
+    {
+        foreach (var item in items)
+        {
+            repo.Add(item);
+        }
+
+        repo.Save();
+    }
+}
+
+...
+
+static void AddEmployees(IRepository<Employee> repo)
+{
+    var employees = new[]
+    {
+        new Employee { FirstName = "Julia" },
+        new Employee { FirstName = "Anna" },
+        new Employee { FirstName = "Thomas" }
+    };
+
+    repo.AddBatch(employees);
+}
+```
