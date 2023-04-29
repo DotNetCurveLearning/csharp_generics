@@ -225,3 +225,34 @@ static void AddEmployees(IRepository<Employee> repo)
     repo.AddBatch(employees);
 }
 ```
+
+## Write a generic extension method with return value
+
+```
+public static class EntityExtensions
+{
+    public static T? Copy<T>(this T itemToCopy) where T : IEntity
+    {
+        var json = JsonSerializer.Serialize<T>(itemToCopy);
+        return JsonSerializer.Deserialize<T>(json);
+    }
+}
+
+...
+
+void AddManagers(IWriteRepository<Manager> managerRepository)
+{
+    var saraManager = new Manager { FirstName = "Sara" };
+    var saraManagerCopy = saraManager.Copy();
+
+    managerRepository.Add(saraManager);
+
+    if (saraManagerCopy is not null)
+    {
+        saraManagerCopy.FirstName += "_Copy";
+        managerRepository.Add(saraManagerCopy);
+    }
+
+    ...
+}
+```
