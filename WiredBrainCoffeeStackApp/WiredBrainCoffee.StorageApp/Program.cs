@@ -6,10 +6,10 @@ var employeeRepository = new SqlRepository<Employee>(new StorageAppDbContext());
 
 AddEmployees(employeeRepository);
 AddManagers(employeeRepository);
-Console.WriteLine($"Employee: {GetEmployeeById(employeeRepository).FirstName}");
+//Console.WriteLine($"Employee: {GetEmployeeById(employeeRepository).FirstName}");
 WriteAllToConsole(employeeRepository);
 
-Console.WriteLine();
+//Console.WriteLine();
 
 var organizationRepository = new ListRepository<Organization>();
 AddOrganizations(organizationRepository);
@@ -23,7 +23,7 @@ void WriteAllToConsole(IReadRepository<IEntity> repository)
 
     foreach (var item in items)
     {
-        Console.WriteLine($"Employee: {item}");
+        Console.WriteLine($"{item}");
     }
 }
 
@@ -31,20 +31,37 @@ Employee GetEmployeeById(IRepository<Employee> employeeRepository)
 {
     return employeeRepository.GetById(2);
 }
-static void AddOrganizations(IWriteRepository<Organization> repo)
+static void AddOrganizations(IRepository<Organization> repo)
 {
-    repo.Add(new Organization { Name = "Pluralsight" });
-    repo.Add(new Organization { Name = "Globomantics" });
+    var organizations = new[]
+    {
+        new Organization { Name = "Pluralsight" },
+        new Organization { Name = "Globomantics" }
+    };
 
-    repo.Save();
+    AddBatch(repo, organizations);
 }
-static void AddEmployees(IWriteRepository<Employee> repo)
+
+static void AddBatch<T>(IWriteRepository<T> repo, T[] items)
 {
-    repo.Add(new Employee { FirstName = "Julia" });
-    repo.Add(new Employee { FirstName = "Anna" });
-    repo.Add(new Employee { FirstName = "Thomas" });
+    foreach (var item in items)
+    {
+        repo.Add(item);
+    }
     
     repo.Save();
+}
+
+static void AddEmployees(IRepository<Employee> repo)
+{
+    var employees = new[]
+    {
+        new Employee { FirstName = "Julia" },
+        new Employee { FirstName = "Anna" },
+        new Employee { FirstName = "Thomas" }
+    };
+
+    AddBatch(repo, employees);
 }
 
 void AddManagers(IWriteRepository<Manager> managerRepository)

@@ -154,3 +154,43 @@ public class GenericSuperRepository<T> : IRepository<T> where T : IEntity
     ...
 }
 ```
+
+# CHAPTER 05 - Creating generic methods and delegates
+
+How to make our methods and delegates reusable by making them generics.
+
+## Creating a generic method
+
+```
+static void AddBatch<T>(IWriteRepository<T> repo, T[] items) 
+{
+    foreach (var item in items)
+    {
+        repo.Add(item);
+    }
+    
+    repo.Save();
+}
+
+static void AddOrganizations(IRepository<Organization> repo)
+{
+    var organizations = new[]
+    {
+        new Organization { Name = "Pluralsight" },
+        new Organization { Name = "Globomantics" }
+    };
+
+    AddBatch(repo, organizations);
+
+static void AddEmployees(IRepository<Employee> repo)
+{
+    var employees = new[]
+    {
+        new Employee { FirstName = "Julia" },
+        new Employee { FirstName = "Anna" },
+        new Employee { FirstName = "Thomas" }
+    };
+
+    AddBatch(repo, employees);
+}
+```
