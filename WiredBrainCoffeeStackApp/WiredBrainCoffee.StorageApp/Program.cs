@@ -5,6 +5,7 @@ using WiredBrainCoffee.StorageApp.Repositories;
 var employeeRepository = new SqlRepository<Employee>(new StorageAppDbContext());
 
 AddEmployees(employeeRepository);
+AddManagers(employeeRepository);
 Console.WriteLine($"Employee: {GetEmployeeById(employeeRepository).FirstName}");
 WriteAllToConsole(employeeRepository);
 
@@ -13,7 +14,6 @@ Console.WriteLine();
 var organizationRepository = new ListRepository<Organization>();
 AddOrganizations(organizationRepository);
 WriteAllToConsole(organizationRepository);
-
 
 Console.ReadLine();
 
@@ -31,27 +31,26 @@ Employee GetEmployeeById(IRepository<Employee> employeeRepository)
 {
     return employeeRepository.GetById(2);
 }
-static void AddOrganizations(IRepository<Organization> organizationRepository)
+static void AddOrganizations(IWriteRepository<Organization> repo)
 {
-    organizationRepository.Add(new Organization { Name = "Pluralsight" });
-    organizationRepository.Add(new Organization { Name = "Globomantics" });
+    repo.Add(new Organization { Name = "Pluralsight" });
+    repo.Add(new Organization { Name = "Globomantics" });
 
-    organizationRepository.Save();
+    repo.Save();
+}
+static void AddEmployees(IWriteRepository<Employee> repo)
+{
+    repo.Add(new Employee { FirstName = "Julia" });
+    repo.Add(new Employee { FirstName = "Anna" });
+    repo.Add(new Employee { FirstName = "Thomas" });
+    
+    repo.Save();
 }
 
-void WriteAllOrganizationsToConsole(IReadOnlyCollection<Organization> organizations)
+void AddManagers(IWriteRepository<Manager> managerRepository)
 {
-    foreach (var organization in organizations)
-    {
-        Console.WriteLine($"Organization: {organization}");
-    }
-}
+    managerRepository.Add(new Manager { FirstName = "Sara" });
+    managerRepository.Add(new Manager { FirstName = "Henry" });
 
-static void AddEmployees(IRepository<Employee> employeeRepository)
-{
-    employeeRepository.Add(new Employee { FirstName = "Julia" });
-    employeeRepository.Add(new Employee { FirstName = "Anna" });
-    employeeRepository.Add(new Employee { FirstName = "Thomas" });
-
-    employeeRepository.Save();
+    managerRepository.Save();
 }

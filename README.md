@@ -110,3 +110,47 @@ For methods where we pass in an item, it's not okay to pass in an IEntity becaus
 This means, for the methods where we read from the repository, we could have **a less specific type**, and this is what **covariance** is about.
 
 ## Understand contravariance
+
+## Work with interface inheritance
+
+We can also define more generic type parameters on a subinterface or we can also inherite a non-generic interface from a generic
+interface.
+
+```
+public interface IRepository<T> : IReadRepository<T>, IWriteRepository<T> 
+    where T : IEntity
+{}
+
+public interface IEmployeeRepository : IRepository<Employee>
+{
+
+}
+```
+
+The same concept is applied to classes:
+
+```
+public class SEmployeeRepository : IRepository<Employee>
+{
+    public void Add(Employee item)
+    {
+        throw new NotImplementedException();
+    }
+
+    ...
+}
+```
+
+We can also create a GenericSuperRepository class:
+
+```
+public class GenericSuperRepository<T> : IRepository<T> where T : IEntity
+{
+    public void Add(T item)
+    {
+        throw new NotImplementedException();
+    }
+
+    ...
+}
+```
